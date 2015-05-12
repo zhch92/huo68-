@@ -1,0 +1,636 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>首页</title>
+    <link rel="stylesheet" href="http://10.0.0.2/statics/css/reset.css">
+    <link rel="stylesheet" href="http://10.0.0.2/statics/css/index.css">
+    <script type="text/javascript" src="http://10.0.0.2/statics/js/laydate.js"></script>
+    <script type="text/javascript" src="http://10.0.0.2/statics/js/jquery.js"></script>
+    <script type="text/javascript" src="http://10.0.0.2/statics/js/index.js"></script>
+    <script type="text/javascript" src="http://10.0.0.2/statics/js/jquery-1.7.1.min.js"></script>
+</head>
+
+<body>
+    <div class="header">
+        <div class="head clearfix">
+            <div class="tel">
+                欢迎您！客服电话： 400-600-6666
+            </div>
+            <ul>
+                <li class="user">您好！<a href="#"><span>成都星期五科技有限公司</span></a></li>
+                <li class="login"><a class="active" href="#">登陆</a> &nbsp|&nbsp <a class="active" href="#">注册</a> </li>
+                <li class="test"><a class="active" href="#">马上免费调车</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="arrived">
+        <div class="arrive clearfix">
+            <div class="logo">
+                <a href="#"><img src="http://10.0.0.2/statics/images/logo.png" alt=""></a>
+            </div>
+            <div class="site">
+                <div class="choose">
+                    <ul class="clearfix">
+                        <li class="item li_1">出发</li>
+                        <li class="item li_6 js_select">
+                            <select name="" id="">
+                                <option value="四川">四川</option>
+                            </select>
+                        </li>
+                        <li class="item li_6 js_select">
+                            <select name="" id="">
+                                <option value="成都">成都</option>
+                            </select>
+                        </li>
+                        <li class="item li_2 li_3" id="start">4月20日</li>
+                    </ul>
+                </div>
+                <div class="choose">
+                    <ul class="clearfix">
+                        <li class="item li_1">到达</li>
+                        <li class="item li_6 js_select">
+                            <select name="" id="">
+                                <option value="四川">四川</option>
+                            </select>
+                        </li>
+                        <li class="item li_6 js_select">
+                            <select name="" id="">
+                                <option value="成都">成都</option>
+                            </select>
+                        </li>
+                    </ul>
+                </div>
+                <div class="choose">
+                    <ul class="clearfix">
+                        <li class="item li_1">运量</li>
+                        <li class="item li_2">
+                            <input type="text"> </li>
+                        <li class="item li_4">
+                            <select name="" id="">
+                                <option value="吨">吨</option>
+                                <option value="立方">立方</option>
+                            </select>
+                        </li>
+                        <li class="item li_5">
+                            <input class="btn" type="submit" value="搜 索">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="screen_b">
+        <div class="screen">
+            <h3>快速筛选</h3>
+            <div class="screen_item clearfix">
+                <dl>
+                    <dt><b class="b_1"> </b>目的地</dt>
+                    <dd  style="width:220px;"><a class="tap" href="#">不限</a>
+                        <a href="#">西安</a>
+                        <a href="#">宝鸡</a>
+                        <a href="#">兰州</a>
+                        <a href="#">西安</a>
+                        <a href="#">宝鸡</a>
+                        <a href="#">兰州</a>
+                        </dd>
+                </dl>
+                <dl>
+                    <dt><b class="b_2"> </b>车型</dt>
+                    <dd>
+                        <a class="tap" href="#">不限车长</a>
+                        <a href="#">9.6米</a>
+                        <a href="#">13米</a>
+                        <a href="#">17.5米</a>
+                        <a href="#">其它</a>
+                    </dd>
+                    <dd>
+                        <a class="tap" href="#">不限车型</a>
+                        <a href="#">箱式</a>
+                        <a href="#">高栏</a>
+                        <a href="#">平板</a>
+                        <a href="#">其它</a>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt><b class="b_3"> </b>运量</dt>
+                    <dd>
+                        <a class="tap" href="#">不限</a> <a href="#">10吨以下</a>
+                        <a href="#">10-20吨</a>
+                        <a href="#">20吨以上</a>
+                    </dd>
+                    <dd>
+                        <a class="tap" href="#">不限</a> <a href="#">10-30立方</a>
+                        <a href="#">30-80立方</a>
+                        <a href="#">80立方以上</a>
+                    </dd>
+                </dl>
+                <dl class="dl_r">
+                    <dt><b class="b_4"> </b>其他</dt>
+                    <dd>
+                        <input type="checkbox">装货可靠
+                        <input  style="margin-left:33px;" type="checkbox">结款准时 </dd>
+                </dl>
+            </div>
+        </div>
+    </div>
+    <div class="main_b">
+        <div class="main">
+            <h3><a class="mr active" href="#">推荐货源</a><a href="#">最新货源</a></h3>
+            <div class="floor clearfix">
+                <div class="padd padd_r">
+                    <div class="show js_show">
+                        <div class="table clearfix">
+                            <table>
+                                <tr>
+                                    <td class="title">呼和浩特呼</td>
+                                    <td width="55"><img src="http://10.0.0.2/statics/images/r1.png" alt=""></td>
+                                    <td width="80" class="title">乌鲁木齐</td>
+                                </tr>
+                                <tr>
+                                    <td>新都区新都区新</td>
+                                    <td></td>
+                                    <td>乌鲁木齐</td>
+                                </tr>
+                                <tr>
+                                    <td>4月20日</td>
+                                    <td></td>
+                                    <td>4月29日</td>
+                                </tr>
+                            </table>
+                            <div class="rside">
+                                <p class="price">PMB410<b>/吨</b></p>
+                                <p class="introduce">普货/40吨/54立方</p>
+                                <a id="apply" href="javascript:void(0)" class="js_AppleBtn">申   请</a>
+                            </div>
+                        </div>
+                        <div class="text">
+                            <p>车型要求&nbsp &nbsp13米&nbsp&nbsp 不限车型</p>
+                            <p>发货32笔&nbsp&nbsp 装货率93%&nbsp&nbsp 借款率78%</p>
+                        </div>
+                        <div id="show" class="hidden_3 hidden js_hidden_3">
+                            <div class="hide amend">
+                                <ul class="clearfix">
+                                    <li class="li_1"> 我的申请:</li>
+                                    <li class="li_2">川A1CY87</li>
+                                    <li class="li_3">13米</li>
+                                    <li class="li_4"> 平板车</li>
+                                    <li class="li_2">发货32笔</li>
+                                    <li class="li_6"> 装货率<span> 93% </span> </li>
+                                    <li class="li_7">借款率<span> 78%</span> </li>
+                                </ul>
+                                <p> 价格
+                                    <input class="price" type="text">元/吨 </p>
+                                <p> 数量
+                                    <input class="number" type="text">吨
+                                    <input class="number" type="text">立方</p>
+                                <p class="total">总价 <strong>RMB 12000.00</strong></p>
+                                <div class="bttn">
+                                    <button class="cancel js_cancel">取消修改</button>
+                                    <button class="sure js_sure">确认申请</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="padd padd_l">
+                    <div class="show js_show">
+                        <div class="table clearfix">
+                            <table>
+                                <tr>
+                                    <td class="title">呼和浩特</td>
+                                    <td width="55"><img src="http://10.0.0.2/statics/images/r1.png" alt=""></td>
+                                    <td class="title">乌鲁木齐</td>
+                                </tr>
+                                <tr>
+                                    <td>新都区</td>
+                                    <td></td>
+                                    <td>乌鲁木齐</td>
+                                </tr>
+                                <tr>
+                                    <td>4月20日</td>
+                                    <td></td>
+                                    <td>4月29日</td>
+                                </tr>
+                            </table>
+                            <div class="rside">
+                                <p class="price">PMB410<b>/吨</b></p>
+                                <p class="introduce">普货/40吨/54立方</p>
+                                <a href="javascript:void(0)" class="js_AppleBtn">申   请</a>
+                            </div>
+                        </div>
+                        <div class="text">
+                            <p>车型要求&nbsp &nbsp13米&nbsp&nbsp 不限车型</p>
+                            <p>发货32笔&nbsp&nbsp 装货率93%&nbsp&nbsp 借款率78%</p>
+                        </div>
+                        <div class="hidden_3 hidden js_hidden_3">
+                            <div class="hide amend">
+                                <ul class="clearfix">
+                                    <li class="li_1"> 我的申请:</li>
+                                    <li class="li_2">川A1CY87</li>
+                                    <li class="li_3">13米</li>
+                                    <li class="li_4"> 平板车</li>
+                                    <li class="li_2">发货32笔</li>
+                                    <li class="li_6"> 装货率<span> 93% </span> </li>
+                                    <li class="li_7">借款率<span> 78%</span> </li>
+                                </ul>
+                                <p> 价格
+                                    <input class="price" type="text">元/吨 </p>
+                                <p> 数量
+                                    <input class="number" type="text">吨
+                                    <input class="number" type="text">立方</p>
+                                <p class="total">总价 <strong>RMB 12000.00</strong></p>
+                                <div class="bttn">
+                                    <button class="cancel js_cancel">取消修改</button>
+                                    <button class="sure js_sure">确认申请</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="floor clearfix">
+                <div class="padd padd_r">
+                    <div class="show js_show">
+                        <div class="table clearfix">
+                            <table>
+                                <tr>
+                                    <td class="title">呼和浩特呼</td>
+                                    <td width="55"><img src="http://10.0.0.2/statics/images/r1.png" alt=""></td>
+                                    <td width="80" class="title">乌鲁木齐</td>
+                                </tr>
+                                <tr>
+                                    <td>新都区新都区新</td>
+                                    <td></td>
+                                    <td>乌鲁木齐</td>
+                                </tr>
+                                <tr>
+                                    <td>4月20日</td>
+                                    <td></td>
+                                    <td>4月29日</td>
+                                </tr>
+                            </table>
+                            <div class="rside">
+                                <p class="price">PMB410<b>/吨</b></p>
+                                <p class="introduce">普货/40吨/54立方</p>
+                                <a href="javascript:void(0)" class="js_AppleBtn">申   请</a>
+                            </div>
+                        </div>
+                        <div class="text">
+                            <p>车型要求&nbsp &nbsp13米&nbsp&nbsp 不限车型</p>
+                            <p>发货32笔&nbsp&nbsp 装货率93%&nbsp&nbsp 借款率78%</p>
+                        </div>
+                        <div class="hidden_3 hidden js_hidden_3">
+                            <div class="hide amend">
+                                <ul class="clearfix">
+                                    <li class="li_1"> 我的申请:</li>
+                                    <li class="li_2">川A1CY87</li>
+                                    <li class="li_3">13米</li>
+                                    <li class="li_4"> 平板车</li>
+                                    <li class="li_2">发货32笔</li>
+                                    <li class="li_6"> 装货率<span> 93% </span> </li>
+                                    <li class="li_7">借款率<span> 78%</span> </li>
+                                </ul>
+                                <p> 价格
+                                    <input class="price" type="text">元/吨 </p>
+                                <p> 数量
+                                    <input class="number" type="text">吨
+                                    <input class="number" type="text">立方</p>
+                                <p class="total">总价 <strong>RMB 12000.00</strong></p>
+                                <div class="bttn">
+                                    <button class="cancel js_cancel">取消修改</button>
+                                    <button class="sure js_sure">确认申请</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="padd padd_l">
+                    <div class="show js_show">
+                        <div class="table clearfix">
+                            <table>
+                                <tr>
+                                    <td class="title">呼和浩特</td>
+                                    <td width="55"><img src="http://10.0.0.2/statics/images/r1.png" alt=""></td>
+                                    <td class="title">乌鲁木齐</td>
+                                </tr>
+                                <tr>
+                                    <td>新都区</td>
+                                    <td></td>
+                                    <td>乌鲁木齐</td>
+                                </tr>
+                                <tr>
+                                    <td>4月20日</td>
+                                    <td></td>
+                                    <td>4月29日</td>
+                                </tr>
+                            </table>
+                            <div class="rside">
+                                <p class="price">PMB410<b>/吨</b></p>
+                                <p class="introduce">普货/40吨/54立方</p>
+                                <a href="javascript:void(0)" class="js_AppleBtn">申   请</a>
+                            </div>
+                        </div>
+                        <div class="text">
+                            <p>车型要求&nbsp &nbsp13米&nbsp&nbsp 不限车型</p>
+                            <p>发货32笔&nbsp&nbsp 装货率93%&nbsp&nbsp 借款率78%</p>
+                        </div>
+                        <div class="hidden_3 hidden js_hidden_3">
+                            <div class="hide amend">
+                                <ul class="clearfix">
+                                    <li class="li_1"> 我的申请:</li>
+                                    <li class="li_2">川A1CY87</li>
+                                    <li class="li_3">13米</li>
+                                    <li class="li_4"> 平板车</li>
+                                    <li class="li_2">发货32笔</li>
+                                    <li class="li_6"> 装货率<span> 93% </span> </li>
+                                    <li class="li_7">借款率<span> 78%</span> </li>
+                                </ul>
+                                <p> 价格
+                                    <input class="price" type="text">元/吨 </p>
+                                <p> 数量
+                                    <input class="number" type="text">吨
+                                    <input class="number" type="text">立方</p>
+                                <p class="total">总价 <strong>RMB 12000.00</strong></p>
+                                <div class="bttn">
+                                    <button class="cancel js_cancel">取消修改</button>
+                                    <button class="sure js_sure">确认申请</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="floor clearfix">
+                <div class="padd padd_r">
+                    <div class="show js_show">
+                        <div class="table clearfix">
+                            <table>
+                                <tr>
+                                    <td class="title">呼和浩特呼</td>
+                                    <td width="55"><img src="http://10.0.0.2/statics/images/r1.png" alt=""></td>
+                                    <td width="80" class="title">乌鲁木齐</td>
+                                </tr>
+                                <tr>
+                                    <td>新都区新都区新</td>
+                                    <td></td>
+                                    <td>乌鲁木齐</td>
+                                </tr>
+                                <tr>
+                                    <td>4月20日</td>
+                                    <td></td>
+                                    <td>4月29日</td>
+                                </tr>
+                            </table>
+                            <div class="rside">
+                                <p class="price">PMB410<b>/吨</b></p>
+                                <p class="introduce">普货/40吨/54立方</p>
+                                <a href="javascript:void(0)" class="js_AppleBtn">申   请</a>
+                            </div>
+                        </div>
+                        <div class="text">
+                            <p>车型要求&nbsp &nbsp13米&nbsp&nbsp 不限车型</p>
+                            <p>发货32笔&nbsp&nbsp 装货率93%&nbsp&nbsp 借款率78%</p>
+                        </div>
+                        <div class="hidden_3 hidden js_hidden_3">
+                            <div class="hide amend">
+                                <ul class="clearfix">
+                                    <li class="li_1"> 我的申请:</li>
+                                    <li class="li_2">川A1CY87</li>
+                                    <li class="li_3">13米</li>
+                                    <li class="li_4"> 平板车</li>
+                                    <li class="li_2">发货32笔</li>
+                                    <li class="li_6"> 装货率<span> 93% </span> </li>
+                                    <li class="li_7">借款率<span> 78%</span> </li>
+                                </ul>
+                                <p> 价格
+                                    <input class="price" type="text">元/吨 </p>
+                                <p> 数量
+                                    <input class="number" type="text">吨
+                                    <input class="number" type="text">立方</p>
+                                <p class="total">总价 <strong>RMB 12000.00</strong></p>
+                                <div class="bttn">
+                                    <button class="cancel js_cancel">取消修改</button>
+                                    <button class="sure js_sure">确认申请</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="padd padd_l">
+                    <div class="show js_show">
+                        <div class="table clearfix">
+                            <table>
+                                <tr>
+                                    <td class="title">呼和浩特</td>
+                                    <td width="55"><img src="http://10.0.0.2/statics/images/r1.png" alt=""></td>
+                                    <td class="title">乌鲁木齐</td>
+                                </tr>
+                                <tr>
+                                    <td>新都区</td>
+                                    <td></td>
+                                    <td>乌鲁木齐</td>
+                                </tr>
+                                <tr>
+                                    <td>4月20日</td>
+                                    <td></td>
+                                    <td>4月29日</td>
+                                </tr>
+                            </table>
+                            <div class="rside">
+                                <p class="price">PMB410<b>/吨</b></p>
+                                <p class="introduce">普货/40吨/54立方</p>
+                                <a href="javascript:void(0)" class="js_AppleBtn">申   请</a>
+                            </div>
+                        </div>
+                        <div class="text">
+                            <p>车型要求&nbsp &nbsp13米&nbsp&nbsp 不限车型</p>
+                            <p>发货32笔&nbsp&nbsp 装货率93%&nbsp&nbsp 借款率78%</p>
+                        </div>
+                        <div class="hidden_3 hidden js_hidden_3">
+                            <div class="hide amend">
+                                <ul class="clearfix">
+                                    <li class="li_1"> 我的申请:</li>
+                                    <li class="li_2">川A1CY87</li>
+                                    <li class="li_3">13米</li>
+                                    <li class="li_4"> 平板车</li>
+                                    <li class="li_2">发货32笔</li>
+                                    <li class="li_6"> 装货率<span> 93% </span> </li>
+                                    <li class="li_7">借款率<span> 78%</span> </li>
+                                </ul>
+                                <p> 价格
+                                    <input class="price" type="text">元/吨 </p>
+                                <p> 数量
+                                    <input class="number" type="text">吨
+                                    <input class="number" type="text">立方</p>
+                                <p class="total">总价 <strong>RMB 12000.00</strong></p>
+                                <div class="bttn">
+                                    <button class="cancel js_cancel">取消修改</button>
+                                    <button class="sure js_sure">确认申请</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="floor clearfix" style="border-bottom:none;">
+                <div class="padd padd_r">
+                    <div class="show js_show">
+                        <div class="table clearfix">
+                            <table>
+                                <tr>
+                                    <td class="title">呼和浩特呼</td>
+                                    <td width="55"><img src="http://10.0.0.2/statics/images/r1.png" alt=""></td>
+                                    <td width="80" class="title">乌鲁木齐</td>
+                                </tr>
+                                <tr>
+                                    <td>新都区新都区新</td>
+                                    <td></td>
+                                    <td>乌鲁木齐</td>
+                                </tr>
+                                <tr>
+                                    <td>4月20日</td>
+                                    <td></td>
+                                    <td>4月29日</td>
+                                </tr>
+                            </table>
+                            <div class="rside">
+                                <p class="price">PMB410<b>/吨</b></p>
+                                <p class="introduce">普货/40吨/54立方</p>
+                                <a href="javascript:void(0)" class="js_AppleBtn">申   请</a>
+                            </div>
+                        </div>
+                        <div class="text">
+                            <p>车型要求&nbsp &nbsp13米&nbsp&nbsp 不限车型</p>
+                            <p>发货32笔&nbsp&nbsp 装货率93%&nbsp&nbsp 借款率78%</p>
+                        </div>
+                        <div class="hidden_3 hidden js_hidden_3">
+                            <div class="hide amend">
+                                <ul class="clearfix">
+                                    <li class="li_1"> 我的申请:</li>
+                                    <li class="li_2">川A1CY87</li>
+                                    <li class="li_3">13米</li>
+                                    <li class="li_4"> 平板车</li>
+                                    <li class="li_2">发货32笔</li>
+                                    <li class="li_6"> 装货率<span> 93% </span> </li>
+                                    <li class="li_7">借款率<span> 78%</span> </li>
+                                </ul>
+                                <p> 价格
+                                    <input class="price" type="text">元/吨 </p>
+                                <p> 数量
+                                    <input class="number" type="text">吨
+                                    <input class="number" type="text">立方</p>
+                                <p class="total">总价 <strong>RMB 12000.00</strong></p>
+                                <div class="bttn">
+                                    <button class="cancel js_cancel">取消修改</button>
+                                    <button class="sure js_sure">确认申请</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="padd padd_l">
+                    <div class="show js_show">
+                        <div class="table clearfix">
+                            <table>
+                                <tr>
+                                    <td class="title">呼和浩特</td>
+                                    <td width="55"><img src="http://10.0.0.2/statics/images/r1.png" alt=""></td>
+                                    <td class="title">乌鲁木齐</td>
+                                </tr>
+                                <tr>
+                                    <td>新都区</td>
+                                    <td></td>
+                                    <td>乌鲁木齐</td>
+                                </tr>
+                                <tr>
+                                    <td>4月20日</td>
+                                    <td></td>
+                                    <td>4月29日</td>
+                                </tr>
+                            </table>
+                            <div class="rside">
+                                <p class="price">PMB410<b>/吨</b></p>
+                                <p class="introduce">普货/40吨/54立方</p>
+                                <a href="javascript:void(0)" class="js_AppleBtn">申   请</a>
+                            </div>
+                        </div>
+                        <div class="text">
+                            <p>车型要求&nbsp &nbsp13米&nbsp&nbsp 不限车型</p>
+                            <p>发货32笔&nbsp&nbsp 装货率93%&nbsp&nbsp 借款率78%</p>
+                        </div>
+                        <div class="hidden_3 hidden js_hidden_3">
+                            <div class="hide amend">
+                                <ul class="clearfix">
+                                    <li class="li_1"> 我的申请:</li>
+                                    <li class="li_2">川A1CY87</li>
+                                    <li class="li_3">13米</li>
+                                    <li class="li_4"> 平板车</li>
+                                    <li class="li_2">发货32笔</li>
+                                    <li class="li_6"> 装货率<span> 93% </span> </li>
+                                    <li class="li_7">借款率<span> 78%</span> </li>
+                                </ul>
+                                <p> 价格
+                                    <input class="price" type="text">元/吨 </p>
+                                <p> 数量
+                                    <input class="number" type="text">吨
+                                    <input class="number" type="text">立方</p>
+                                <p class="total">总价 <strong>RMB 12000.00</strong></p>
+                                <div class="bttn">
+                                    <button class="cancel js_cancel">取消修改</button>
+                                    <button class="sure js_sure">确认申请</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="page">
+                    <ul>
+                        <li class="home">
+                            <a href="#"></a>
+                        </li>
+                        <li class="pgup">
+                            <a href="#"></a>
+                        </li>
+                        <li class="active"><a href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li class="excessive"></li>
+                        <li><a href="#">10</a></li>
+                        <li class="end">
+                            <a href="#"></a>
+                        </li>
+                        <li class="pgdn">
+                            <a href="#"></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="foot">
+            <p><img src="http://10.0.0.2/statics/images/logo_1.png" alt="">© 2014 HUO68.COM 成都星期五科技有限公司 版本所有 川B2-140912-1</p>
+        </div>
+    </div>
+    <script>
+    var start = {
+        elem: '#start',
+        format: 'YYYY-MM-DD',
+        min: laydate.now(),
+        max: '2099-06-16',
+        istime: true,
+        istoday: false
+
+    };
+    laydate(start);
+    </script>
+</body>
+
+</html>

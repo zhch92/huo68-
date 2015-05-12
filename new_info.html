@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>新建货源</title>
+    <link rel="stylesheet" href="http://10.0.0.2/statics/css/reset.css">
+    <script type="text/javascript" src="http://10.0.0.2/statics/js/laydate.js"></script>
+    <link rel="stylesheet" href="http://10.0.0.2/statics/css/info.css">
+</head>
+
+<body>
+    <div class="header">
+        <div class="head clearfix">
+            <div class="tel">
+                欢迎您！客服电话： 400-600-6666
+            </div>
+            <ul>
+                <li class="user">您好！<a href="#"><span>成都星期五科技有限公司</span></a></li>
+                <li class="login"><a class="active" href="#">登陆</a> &nbsp|&nbsp <a class="active" href="#">注册</a> </li>
+                <li class="test"><a class="active" href="#">马上免费调车</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="content">
+        <div class="logo">
+            <img src="http://10.0.0.2/statics/images/logo.png" alt="">
+        </div>
+        <div class="main">
+            <h3>发布货源</h3>
+            <div class="basic_info">
+                <ul>
+                    <li>货物类型
+                        <input class="mold" type="text" value="白酒">
+                    </li>
+                        <li>货物重量
+                        <input type="text">吨
+                        <input type="text">立方
+                        </li>
+                    <li>货物价格
+                        <input type="text">元/吨
+                        </li>
+                        <li style="padding-left:75px">总价：<span>1000</span>元</li>
+                
+                    <li>车长
+                        <select name="" id="">
+                            <option value="不限">不限</option>
+                            <option value="9.6m">9.6m</option>
+                            <option value="12m">12m</option>
+                            <option value="17.5m">17.5m</option>
+                        </select>
+               
+                    车型
+                        <select name="" id="">
+                            <option value="不限">不限</option>
+                            <option value="箱式车">箱式车</option>
+                            <option value="高栏车">高栏车</option>
+                            <option value="平板车">平板车</option>
+                        </select>
+                    </li>
+                </ul>
+            </div>
+            <div class="adress_info">
+                <ul>
+                    <li class="date">接货日期
+                        <input type="text"><b></b>
+                    </li>
+                    <li class="adress">接货地址
+                        <select name="" id="">
+                            <option value="四川">四川</option>
+                        </select>省
+                        <select name="" id="">
+                            <option value="成都">成都</option>
+                        </select>市
+                        <select name="" id="">
+                            <option value="新都">新都</option>
+                        </select>区
+                        <br>
+                        <input type="text">
+                    </li>
+                    <li class="date">到货日期
+                        <input type="text"><b></b>
+                    </li>
+                    <li class="adress">到货地址
+                        <select name="" id="">
+                            <option value="四川">四川</option>
+                        </select>省
+                        <select name="" id="">
+                            <option value="成都">成都</option>
+                        </select>市
+                        <select name="" id="">
+                            <option value="新都">新都</option>
+                        </select>区
+                        <br>
+                        <input type="text">
+                    </li>
+                </ul>
+                <p class="bttn">
+                    <button class="cancel">取消</button>
+                    <button class="sure" style="margin-right:32px">确定</button>
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="foot">
+            <p><img src="http://10.0.0.2/statics/images/logo_1.png" alt="">© 2014 HUO68.COM 成都星期五科技有限公司 版本所有 川B2-140912-1</p>
+        </div>
+    </div>
+    <script>
+       var start = {
+        elem: '#start',
+        format: 'YYYY-MM-DD',
+        min: laydate.now(),
+        max: '2099-06-16',
+        istime: true,
+        istoday: false
+
+    };
+    laydate(start);</script>
+</body>
+
+</html>
