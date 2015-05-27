@@ -131,7 +131,23 @@
             <p><img src="images/logo_1.png" alt="">© 2014 HUO68.COM 成都星期五科技有限公司 版本所有 川B2-140912-1</p>
         </div>
     </div>
-   
+   <script>
+   $(document).ready(function(){
+                $(".car_info li").on("click",function(event){
+                    var $this=$(this);
+                    var radio=$this.find("input[type='radio']");
+                    $this.parent().find("input[type='radio']").removeAttr('checked');
+                    radio.prop("checked",true);
+                });
+                $(".change li").on("click",function(){
+                    var $this=$(this);
+                    var radio=$this.find("input[type='radio']");
+                     $this.parent().find("input[type='radio']").removeAttr('checked');
+                     radio.prop("checked",true);
+                })
+               
+              });
+   </script>
 </body>
 
 </html>
